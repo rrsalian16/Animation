@@ -1,0 +1,83 @@
+.body {
+    min-height: 90vh;
+    display: grid;
+    place-items: center;
+    background-color: black;
+    color: white;
+}
+
+.glitch {
+    position: relative;
+    font-size: 9rem;
+    text-transform: uppercase;
+
+    text-shadow:
+        0.15rem 0 0 rgba(255, 0, 0, 0.8),
+        0.15rem 0 0 rgba(0, 255, 0, 0.8),
+        0.15rem 0 0 rgba(0, 0, 255, 0.8);
+    animation: glitch 500ms infinite;
+}
+
+.glitch span {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.glitch span:first-child {
+    animation: glitch 750ms infinite;
+    /*z-index: 1;
+    color: red;*/
+    opacity: 0.8;
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 0 70%);
+    transform: translate(0.25rem, -0.25rem);
+}
+
+.glitch span:last-child {
+    animation: glitch 350ms infinite;
+    /*z-index: 1;
+    color: green;*/
+    opacity: 0.8;
+    clip-path: polygon(0 70%, 100% 40%, 100% 100%, 0 100%);
+    transform: translate(-0.25rem, 0.25rem);
+}
+
+
+
+
+@keyframes glitch {
+    0% {
+        text-shadow:
+            0.15rem -0.10rem 0 rgba(255, 0, 0, 0.8),
+            -0.15rem 0.15rem 0 rgba(0, 255, 0, 0.8),
+            -0.25rem -0.25rem 0 rgba(0, 0, 255, 0.8);
+    }
+
+    25% {
+        text-shadow:
+            -0.15rem -0.15rem 0 rgba(255, 0, 0, 0.8),
+            0.15rem -0.15rem 0 rgba(0, 255, 0, 0.8),
+            0.15rem 0.15rem 0 rgba(0, 0, 255, 0.8);
+    }
+
+    50% {
+        text-shadow:
+            0.15rem 0.15rem 0 rgba(255, 0, 0, 0.8),
+            0.15rem -0.15rem 0 rgba(0, 255, 0, 0.8),
+            -0.15rem -0.15rem 0 rgba(0, 0, 255, 0.8);
+    }
+
+    75% {
+        text-shadow:
+            -0.15rem -0.15rem 0 rgba(255, 0, 0, 0.8),
+            0.15rem -0.15rem 0 rgba(0, 255, 0, 0.8),
+            0.15rem 0.15rem 0 rgba(0, 0, 255, 0.8);
+    }
+
+    100% {
+        text-shadow:
+            0.15rem 0 0 rgba(255, 0, 0, 0.8),
+            0.15rem 0 0 rgba(0, 255, 0, 0.8),
+            0.15rem 0 0 rgba(0, 0, 255, 0.8);
+    }
+}
