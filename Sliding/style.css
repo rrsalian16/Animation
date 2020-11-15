@@ -11,7 +11,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
-    padding-top: 30px;
+    /*padding-top: 30px;*/
     box-sizing: border-box;
 }
 
@@ -61,42 +61,6 @@ nav ul li a{
     width: 30px;
     margin-left: 15px;
     cursor: pointer;
-}
-
-.sidebar{
-    width: 155px;
-    height: 100vh;
-    background: rgba(29, 31, 59, 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
-
-}
-
-.search-icon{
-    width: 20px;
-    display: block;
-    margin: 120px auto 0;
-}
-
-.social-links{
-    width: 20px;
-    display: block;
-    margin: 120px auto 0;
-    text-align: center;
-}
-
-.social-links img{
-    height: 15px;
-    margin-bottom: 30px;
-}
-
-.info-icon{
-    width: 15px;
-    position: absolute;
-    left: 50%;
-    bottom: 30px;
-    transform: translate(-50%);
 }
 
 .msg-container{
@@ -172,4 +136,67 @@ nav ul li a{
     top: 0;
     transition: all 0.5s ease;
     transform: translateX(-50%);
+}
+
+
+@media screen and (max-width: 768px){
+    .msg-container {
+        width: 300px;
+        height: 350px;
+        
+    }
+    .msg-col {
+       width: 300px;
+       height: 350px;
+    }
+
+    .msg-col h1 {
+        font-size: 40px;
+        font-weight: 100;
+        margin: 10px 0;
+    }
+
+    .msg-col p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    nav ul{
+        display: none;
+    }
+    .navbar{
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .msg-container {
+        width: 200px;
+        height: 350px;
+
+    }
+
+    .msg-col {
+         width: 200px;
+         height: 350px;
+    }
+
+    .msg-col h1 {
+        font-size: 30px;
+        font-weight: 100;
+        margin: 10px 0;
+    }
+
+    .msg-col p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+     .navbar {
+         padding: 0 20px;
+     }
 }
