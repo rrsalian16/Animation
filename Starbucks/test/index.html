@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Starbucks</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="circle" id="circle"></div>
+
+        <header>
+            <img src="./../images/logo.png" alt="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">What's Nes</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <section>
+
+            <div class="msg-box">
+                <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, obcaecati corporis? Consequatur quibusdam aliquid eaque in aspernatur et rerum voluptatem ducimus temporibus delectus eos voluptatibus dolorem consectetur nobis, praesentium aliquam</p>
+                <a href="#">Learn More</a>
+
+            </div>
+            <img src="../images/img1.png" alt="" id="main-img">
+        </section>
+
+        <div class="thumb">
+            <img src="../images/thumb1.png" alt="" onclick="changeImage('../images/img1.png');changeColor('green');">
+            <img src="../images/thumb2.png" alt="" onclick="changeImage('../images/img2.png');changeColor('pink');">
+            <img src="../images/thumb3.png" alt="" onclick="changeImage('../images/img3.png');changeColor('orange');">
+        </div>
+
+    </div>
+    <script>
+        function changeImage(src) {
+        document.getElementById("main-img").src=src
+        }
+        function changeColor(clr){
+            document.getElementById("circle").style.background=clr;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+header img{
+    height: 60px;
+    width: 60px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header ul li{
+    margin-left: 50px;
+    
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #333;
+}
+
+section{
+    padding: 80px 80px 20px;
+    position: relative;
+
+}
+
+
+section .msg-box h2 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+section .msg-box p {
+    width: 50%;
+    line-height: 25px;
+}
+
+section .msg-box h2 span {
+    font-size: 80px;
+    color: green;
+    font-weight: 900;
+}
+
+section .msg-box a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: green;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+   
+}
+
+section img{
+    position: absolute;
+    height: 95%;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+}
+
+.thumb{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+}
+
+.thumb img{
+    height: 100px;
+    margin-right: 10px;
+    transition: 0.3s ease;
+}
+
+.thumb img:hover{
+    transform: translateY(-20%);
+}
+
+@media screen and (max-width: 768px){
+    section {
+        padding: 20px 20px 10px;
+    }
+    header{
+        padding: 0 20px;
+    }
+
+    section .msg-box h2 {
+        font-size: 30px;
+    }
+
+    section .msg-box p {
+        line-height: 20px;
+    }
+
+    section .msg-box h2 span {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    section {
+        padding: 20px 20px 10px;
+    }
+
+    header {
+        padding: 0 5px;
+    }
+
+    section .msg-box h2 {
+        font-size: 30px;
+    }
+
+    section .msg-box p {
+        line-height: 20px;
+    }
+
+    section .msg-box h2 span {
+        font-size: 40px;
+    }
+
+    header ul li {
+        margin-left: 5px;
+    }
+}

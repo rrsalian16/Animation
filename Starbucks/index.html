@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Starbucks</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="images/logo.png" class="logo" alt="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text-box">
+                <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, numquam alias laborum voluptatum corrupti reprehenderit suscipit dicta sit, eos impedit tempore quae, excepturi modi saepe magni dolor! Vero, amet magni.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="img-box">
+                <img src="images/img1.png" alt="" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png'); chageCircleColor('#017143')" alt="">
+            </li>
+            <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png'); chageCircleColor('#eb7495')" alt="">
+            </li>
+            <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png'); chageCircleColor('#d752b1')" alt="">
+            </li>
+        </ul>
+        <!--<ul class="social">
+            <li><a href="#"><img src="images/facebook.png" alt=""></a</li>
+            <li><a href="#"><img src="images/instagram.png" alt=""></a</li>
+            <li><a href="#"><img src="images/twitter.png" alt=""></a</li>
+        </ul>-->
+    </section>
+
+
+    <script type="text/javascript">
+        function  imgSlider(anything) {
+            document.querySelector(".starbucks").src=anything
+        }
+
+        function chageCircleColor(color) {
+            const circle=document.querySelector(".circle");
+            circle.style.background=color;
+        }
+    </script>
+    
+</body>
+</html>
