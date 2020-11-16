@@ -70,3 +70,15 @@ section {
     top: 0;
     opacity: 0.3;
 }
+
+@media screen and (max-width: 768px){
+    .hero h1{
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .hero h1 {
+        font-size: 75px;
+    }
+}
