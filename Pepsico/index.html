@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pepsico</title>
+</head>
+<body>
+    <div class="container" id="cnt">
+        <header>
+            <img src="/images/logo.png" alt="logo" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="text-box">
+            <h1>That's What<br>I <span>like</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam repudiandae, aperiam et eaque hic temporibus! Molestiae, saepe dolorem quo.</p>
+            <a href="">Learn More</a>
+        </div>
+        <div class="img-box">
+            <img src="images/pepsi001.png" alt="" class="main-image" id="main-img">
+        </div>
+
+        <div class="thumb">
+            <img src="images/pepsi001.png" onclick="changePic('images/pepsi001.png','#004999')" alt="">
+            <img src="images/pepsi002.png" onclick="changePic('images/pepsi002.png','#cf1b27')" alt="">
+            <img src="images/pepsi003.png" onclick="changePic('images/pepsi003.png','black')" alt="">
+        </div>
+    </div>
+    <script>
+        function changePic(pic,color) {
+            console.log(pic,color);
+            document.getElementById("main-img").src=pic
+            document.getElementById("cnt").style.background=color
+        }
+    </script>
+</body>
+</html>
